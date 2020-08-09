@@ -1,0 +1,164 @@
+<!-- Replicating Google homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 22px 0 0 0; 
+                padding: 0;
+                }
+            li{
+                display: inline-block;
+                font-family: "Arial", "San-Serif";
+                font-size: 13px;
+                opacity: 0.75;
+                }
+          li.nleft{
+                padding-left: 15px;
+                float: left;
+                }
+          li.nright{
+            padding-right: 15px;
+            float: right;
+                   }
+          #signin{
+            background-color:  rgb(66, 133, 244);
+            color: white;
+            border-radius: 2px;
+            padding: 5px 10px;
+            bottom: 5px;
+            position: relative;
+            border: 2px solid rgb(66, 133, 244);
+            opacity: 100;
+                 }
+          .google-logo{
+            position: absolute;
+            left: 41%;
+            top: 20%;
+                      }
+          .search-bar input{
+            left: 35%;
+            position: absolute;
+            top: 33%;
+            width: 500px;
+            line-height: 44px;
+            border-radius: 24px;
+            border: 1px solid #dfe1e5;
+                          }
+          .buttons{
+              text-align: center;
+              padding-top: 370px;
+              padding-left: 6%;;
+                  }
+          .buttons #google-search{
+            opacity: 0.7;
+            height: 35px;
+            font-family: "Arial", "San-Serif";
+            font-size: 14px;
+            border: transparent;
+            text-align: center;
+            position: relative;
+            right: 100px;
+            background: #f2f2f2;
+            padding: 0 16px;
+            border-radius: 5px;
+                                }
+          .buttons #im-feeling-lucky{
+            opacity: 0.7;
+            height: 35px;
+            font-family: "Arial", "San-Serif";
+            font-size: 14px;
+            border: transparent;
+            text-align: center;
+            position: relative;
+            background: #f2f2f2
+            padding: 0 16px;
+            border-radius: 3px;
+            right: 95px;
+                                    }
+          .footer{
+            background: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+            line-height: 1px;
+            padding: 0 0 0 10px;
+            font-size: 20px;
+            bottom: 0px;
+            position: absolute;
+            width: 100%;
+                 }
+          li.lfooter{
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            float: left;
+            font-size: 14px;
+                    }
+          li.rfooter{
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            float: right;
+            font-size: 14px;
+                    }
+          #rrfooter{
+            padding-right: 30px
+                   }
+
+        </style>
+    </head>
+   
+    <body>
+
+    <!-- Top Navigation Bar-->
+   
+            <ul>
+                <li class="nleft">About</li>
+                <li class="nleft">Store</li>
+                <li class="nright" id="signin">  Sign in</li>
+                <li class="nright">Apps</li>
+                <li class="nright">Images</li>
+                <li class="nright">Gmail</li>
+            </ul>
+
+    <!-- Middle Section w/ Google Logo and Search Bar-->
+        
+        <!-- Google Logo-->
+        <div >
+            <div class="google-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="`Google Logo" >
+            </div>
+
+            <!--Search Bar-->
+            <div class="search-bar">
+                <form>
+                    <input type="text">
+                </form>
+            </div>
+
+            <!-- Buttons-->
+            <div class="buttons">
+                <input type="submit" value="Google Search" id="google-search">
+                <input type="submit" value="I'm Feeling Lucky" id="im-feeling-lucky">
+            </div>
+
+    <!-- Bottom Section w/ Google Logo and Search Bar-->
+        <div class="footer">
+    
+        <ul>
+            <li class="lfooter" >Advertising</li>
+            <li class="lfooter">Business</li>
+            <li class="lfooter">How Search works</li>
+            <li class="rfooter" id="rrfooter">Privacy</li>
+            <li class="rfooter">Terms</li>
+            <li class="rfooter">Settings</li>
+        </ul>
+    
+        </div>
+
+    </body>
+
+</html>
